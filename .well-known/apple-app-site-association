@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "P9SL83V74J.com.joji.app",
+        "appID": "P9SL83V74J.org.reactjs.native.example.joji-app",",
         "paths": ["/auth/*", "/password-reset/*", "/magic-link/*", "/onboarding/*"]
       }
     ]
