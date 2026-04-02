@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "P9SL83V74J.com.joji.app",
+        "paths": ["/auth/*", "/password-reset/*", "/magic-link/*", "/onboarding/*"]
+      }
+    ]
+  }
+}
