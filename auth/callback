@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Verified</title>
+  <script>
+    // Get the fragment from Supabase redirect
+    const hash = window.location.hash; // #access_token=...&refresh_token=...
+    
+    // Redirect to mobile app
+    window.location.href = 'joji_app://auth/callback' + hash;
+
+    // Optional fallback for browsers
+    setTimeout(() => {
+      document.body.innerHTML = `
+        <h2>Email verified!</h2>
+        <p>Open the Joji app to continue.</p>
+      `;
+    }, 1000);
+  </script>
+</head>
+<body>
+  <h2>Verifying your email...</h2>
+</body>
+</html>
