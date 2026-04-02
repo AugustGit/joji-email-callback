@@ -2,24 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Email Verified</title>
-  <script>
-    // Get the fragment from Supabase redirect
-    const hash = window.location.hash; // #access_token=...&refresh_token=...
-    
-    // Redirect to mobile app
-    window.location.href = 'joji_app://auth/callback' + hash;
-
-    // Optional fallback for browsers
-    setTimeout(() => {
-      document.body.innerHTML = `
-        <h2>Email verified!</h2>
-        <p>Open the Joji app to continue.</p>
-      `;
-    }, 1000);
-  </script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #0070f3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h2>Verifying your email...</h2>
+  <div class="container">
+    <h1>Your email has been verified!</h1>
+    <p>Please open the app and login to continue</p>
+  </div>
 </body>
 </html>
